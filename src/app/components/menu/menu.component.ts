@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
       icone: '../../../assets/svg/calendario.svg'
     },
     {
-      rota: '/jogos',
+      rota: '/jogo',
       icone: '../../../assets/svg/jogos.svg'
     },
     {
