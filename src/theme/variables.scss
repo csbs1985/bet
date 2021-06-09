@@ -1,3 +1,23 @@
+@import '_fonts';
+@import '_base';
+
+:root {
+  --branco: #FFFFFF;
+  --cinza-claro: #F5F5F5;
+  --cinza: #EFEFEF;
+  --cinza-escuro: #E4E4E4;
+  --preto: #2E2E2E;
+  --verde: #3CAF88;
+  --vermelho: #C52E2F;
+  --roxo: #A53DDB;
+  --amarelo: #EEC322;
+  --azul: #09558F;
+
+  --canto: 10px;
+
+  --padding: ;
+}
+
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
