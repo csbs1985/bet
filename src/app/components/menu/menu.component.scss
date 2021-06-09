@@ -1,0 +1,11 @@
+.menu {
+  background-color: var(--cinza-claro);
+  height: 48px;
+  width: 100%;
+
+  &-item {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--cinza);
+  }
+}
