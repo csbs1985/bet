@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bet-menu',
+  selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
@@ -9,30 +9,30 @@ export class MenuComponent implements OnInit {
 
   menu = [
     {
-      rota: 'inicio',
+      rota: '/inicio',
       icone: '../../../assets/svg/inicio.svg'
     },
     {
-      rota: 'calendario',
+      rota: '/calendario',
       icone: '../../../assets/svg/calendario.svg'
     },
     {
-      rota: 'jogos',
+      rota: '/jogos',
       icone: '../../../assets/svg/jogos.svg'
     },
     {
-      rota: 'grupo',
+      rota: '/grupo',
       icone: '../../../assets/svg/grupo.svg'
     },
     {
-      rota: 'classificacao',
+      rota: '/classificacao',
       icone: '../../../assets/svg/classificacao.svg'
     },
     {
-      rota: 'notificacao',
+      rota: '/notificacao',
       icone: '../../../assets/svg/notificacao.svg'
     }
-  ]
+  ];
 
   constructor() { }
 

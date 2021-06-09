@@ -4,7 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
-  { path: 'inicio', component: InicioPage },
+  { path: '*', component: InicioPage },
+  { path: 'inicio', component: InicioPage }
 ];
 
 @NgModule({
