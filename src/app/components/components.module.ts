@@ -3,15 +3,18 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { MenuComponent } from './menu/menu.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BuscaComponent } from './busca/busca.component';
 
 @NgModule({
   declarations: [
     CabecalhoComponent,
-    MenuComponent
+    MenuComponent,
+    BuscaComponent
   ],
   exports: [
     CabecalhoComponent,
-    MenuComponent
+    MenuComponent,
+    BuscaComponent
   ],
   imports: [
     CommonModule,

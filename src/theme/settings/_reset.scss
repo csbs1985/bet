@@ -24,7 +24,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -79,15 +78,19 @@ summary,
 time,
 mark,
 audio,
-video,
-ion-content {
+video {
   font-family: museo-100, Roboto, Arial;
-  color: colors(preto);
-  font-size: sizes(s16);
+  color: var(--preto);
+  font-size: var(--size16);
   margin: 0;
   padding: 0;
   position: relative;
   outline: none;
-  background-color: colors(branco);
+  background-color: var(--cinza-claro);
   display: block;
+}
+
+img,
+svg {
+  background-color: none;
 }

@@ -1,3 +1,9 @@
-<p>
-  cabecalho works!
-</p>
+<div class="cabecalho">
+  <div class="cabecalho__voltar" *ngIf="habilitarVoltar"> </div>
+
+  <div class="cabecalho__titulo">{{ titulo }}</div>
+
+  <div class="cabecalho__busca" *ngIf="habilitarBusca" [routerLink]="['/busca']"></div>
+
+  <div class="cabecalho__perfil"> </div>
+</div>

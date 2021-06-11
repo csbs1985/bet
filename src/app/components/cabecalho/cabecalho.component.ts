@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cabecalho',
@@ -6,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cabecalho.component.scss'],
 })
 export class CabecalhoComponent implements OnInit {
+  @Input() titulo;
+  @Input() voltar;
+  @Input() busca;
 
-  constructor() { }
+  habilitarVoltar = true;
+  habilitarBusca = true;
+  cabecalhoTitulo: string;
 
-  ngOnInit() {}
+  constructor(private _location: Location) { }
 
+  ngOnInit() {
+    this.habilitarVoltar = this.voltar || false;
+    this.habilitarBusca = this.busca || false;
+  }
+
+  backClicked() {
+    this._location.back();
+  }
 }

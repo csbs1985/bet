@@ -32,11 +32,6 @@ export class MenuComponent {
       rota: '/classificacao',
       icone: '../../../assets/svg/classificacao.svg',
       ativo: false
-    },
-    {
-      rota: '/notificacao',
-      icone: '../../../assets/svg/notificacao.svg',
-      ativo: false
     }
   ];
 

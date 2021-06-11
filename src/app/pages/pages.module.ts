@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InicioPageModule } from './inicio/inicio.module';
+import { InicioModule } from './inicio/inicio.module';
+import { BuscaModule } from './busca/busca.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    InicioPageModule
+    InicioModule,
+    BuscaModule
   ]
 })
 export class PagesModule { }

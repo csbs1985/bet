@@ -1,0 +1,13 @@
+.busca {
+  width: 100%;
+  background-color: var(--cinza-claro);
+  padding: var(--large);
+
+  &__box {
+    width: 100%;
+    height: var(--size48);
+    border-radius: var(--canto);
+    background: var(--cinza-escuro) url('../../../assets/svg/busca.svg') no-repeat center;
+    background-position-x: var(--large);
+  }
+}

@@ -1,0 +1,10 @@
+/// Mapa de configuração dos espaçamentos
+/// @group settings
+///
+
+:root {
+  --small: var(--size4);
+  --medium: var(--size10);
+  --large: var(--size20);
+  --xlarge: var(--size40);
+}

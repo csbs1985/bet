@@ -1,21 +1,22 @@
 .menu {
-  background-color: var(--cinza);
   height: var(--size48);
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 var(--size20);
+  padding: 0 var(--large);
+
 
   &__item {
     flex: 0 1 auto;
     height: var(--size48);
     width: var(--size48);
     border-radius: var(--circulo);
-    background-color: var(--cinza-escuro);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+    background-color: var(--cinza-escuro);
   }
 
   &__item--ativo {

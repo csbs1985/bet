@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "bet",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
