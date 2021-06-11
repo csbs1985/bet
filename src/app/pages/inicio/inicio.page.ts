@@ -9,7 +9,5 @@ export class InicioPage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
