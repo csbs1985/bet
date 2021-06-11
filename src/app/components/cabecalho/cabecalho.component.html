@@ -5,5 +5,7 @@
 
   <div class="cabecalho__busca" *ngIf="habilitarBusca" [routerLink]="['/busca']"></div>
 
+  <div class="cabecalho__notificacao" *ngIf="habilitaNotificacao" [routerLink]="['/notificacao']" [class.cabecalho__notificacao--alerta]="NotificacaoLength > 0"> </div>
+
   <div class="cabecalho__perfil"> </div>
 </div>

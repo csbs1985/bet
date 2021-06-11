@@ -14,6 +14,7 @@
 
   &__voltar,
   &__busca,
+  &__notificacao,
   &__perfil {
     height: var(--size36);
     width: var(--size36);
@@ -29,8 +30,17 @@
     background: var(--cinza-escuro) url('../../../assets/svg/busca.svg') no-repeat center;
   }
 
+  &__notificacao {
+    background: var(--cinza-escuro) url('../../../assets/svg/notificacao.svg') no-repeat center;
+    margin-left: var(--size10);
+  }
+
   &__perfil {
     background: var(--cinza-escuro) url('../../../assets/svg/usuario.svg') no-repeat center;
     margin-left: var(--size10);
+  }
+
+  &__notificacao--alerta {
+    background-color: #fff;
   }
 }
