@@ -1,40 +1,49 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
-
+export class MenuComponent {
   menu = [
     {
       rota: '/inicio',
-      icone: '../../../assets/svg/inicio.svg'
+      icone: '../../../assets/svg/inicio.svg',
+      ativo: true
     },
     {
       rota: '/calendario',
-      icone: '../../../assets/svg/calendario.svg'
+      icone: '../../../assets/svg/calendario.svg',
+      ativo: false
     },
     {
       rota: '/jogo',
-      icone: '../../../assets/svg/jogos.svg'
+      icone: '../../../assets/svg/jogo.svg',
+      ativo: false
     },
     {
       rota: '/grupo',
-      icone: '../../../assets/svg/grupo.svg'
+      icone: '../../../assets/svg/grupo.svg',
+      ativo: false
     },
     {
       rota: '/classificacao',
-      icone: '../../../assets/svg/classificacao.svg'
+      icone: '../../../assets/svg/classificacao.svg',
+      ativo: false
     },
     {
       rota: '/notificacao',
-      icone: '../../../assets/svg/notificacao.svg'
+      icone: '../../../assets/svg/notificacao.svg',
+      ativo: false
     }
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() { }
+  selecionarItemMenu(rota): void {
+    this.menu.forEach(item => item.rota === rota ? item.ativo = true : item.ativo = false);
+    this.router.navigate([rota]);
+  }
 }

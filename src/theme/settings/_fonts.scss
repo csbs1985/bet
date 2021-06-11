@@ -1,0 +1,41 @@
+/// Mapa de fontes padrão
+///
+/// **Nota:** Para uma melhor performance e usabilidade quando for a mesma fonte, use sempre o mesmo `nome`, e lembre-se que o `path`.
+///
+/// @group settings
+///
+/// @link https://developer.mozilla.org/pt-BR/docs/Web/CSS/font-weight#Mapeamento_de_nomes_comuns_de_pesos Mapeamento de nomes comuns de pesos
+///
+$ui-fonts: (
+  f12: (
+    name: 'museo-100',
+    path: './../fonts/Nunito-Regular.ttf',
+    format: 'truopentypetype',
+    weight: 100,
+    style: normal,
+    size: sizes(s12)
+  ),
+  f14: (
+    name: 'museo-500',
+    path: './../fonts/Nunito-Bold.ttf',
+    format: 'opentype',
+    weight: 700,
+    style: normal,
+  ),
+
+  f16: (
+    name: 'museo-500',
+    path: './../fonts/Nunito-Bold.ttf',
+    format: 'opentype',
+    weight: 700,
+    style: normal,
+  ),
+
+  f24: (
+    name: 'museo-500',
+    path: './../fonts/Nunito-Bold.ttf',
+    format: 'opentype',
+    weight: 700,
+    style: normal,
+  ),
+) !default;

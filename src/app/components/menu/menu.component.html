@@ -1,5 +1,7 @@
-<div class="menu" *ngFor="let item of menu">
-  <div class="menu-item" [routerLink]="[item.rota]">
-    <img src="item.icone" alt="item.rota">
+<div class="menu">
+  <div *ngFor="let item of menu">
+    <div class="menu__item" (click)="selecionarItemMenu(item.rota)" [class.menu__item--ativo]="item.ativo">
+      <img src="{{item.icone}}" alt="item.rota">
+    </div>
   </div>
 </div>

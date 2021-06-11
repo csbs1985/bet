@@ -1,0 +1,10 @@
+/// Mapa de configuração referente aos tamanhos da fonte
+/// @group settings
+///
+
+$ui-font-sizes: (
+  small: space(s12),
+  medium: space(s14),
+  large: space(s16),
+  xlarge: space(s24),
+) !default;

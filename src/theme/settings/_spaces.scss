@@ -1,0 +1,10 @@
+/// Mapa de configuração dos espaçamentos
+/// @group settings
+///
+
+$ui-spaces: (
+  small: sizes(s4),
+  medium: sizes(s10),
+  large: sizes(s20),
+  xlarge: sizes(s40)
+) !default;
