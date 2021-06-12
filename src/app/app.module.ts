@@ -6,6 +6,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { ClassificacaoPageModule } from './pages/classificacao/classificacao.module';
 
 @NgModule({
   declarations: [AppPage],
@@ -15,7 +16,8 @@ import { PagesModule } from './pages/pages.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     ComponentsModule,
-    PagesModule
+    PagesModule,
+    ClassificacaoPageModule
   ],
   providers: [{
     provide: RouteReuseStrategy,

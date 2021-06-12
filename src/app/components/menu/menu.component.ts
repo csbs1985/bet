@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,12 +6,14 @@ import { Router } from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
+  @Input() pagina;
+
   menu = [
     {
       rota: '/inicio',
       icone: '../../../assets/svg/inicio.svg',
-      ativo: true
+      ativo: false
     },
     {
       rota: '/calendario',
@@ -37,8 +39,16 @@ export class MenuComponent {
 
   constructor(private router: Router) { }
 
+  ngOnInit() {
+    this.menu.forEach(item => {
+      item.ativo = false;
+      if (item.rota === this.pagina) {
+        item.ativo = true;
+      }
+    });
+  }
+
   selecionarItemMenu(rota): void {
-    this.menu.forEach(item => item.rota === rota ? item.ativo = true : item.ativo = false);
     this.router.navigate([rota]);
   }
 }

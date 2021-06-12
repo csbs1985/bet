@@ -19,7 +19,7 @@
     height: var(--size36);
     width: var(--size36);
     border-radius: var(--circulo);
-    background: var(--cinza-escuro) url('../../../assets/svg/voltar.svg') no-repeat center;
+    background: var(--back) url('../../../assets/svg/voltar.svg') no-repeat center;
   }
 
   &__voltar {
@@ -27,20 +27,20 @@
   }
 
   &__busca {
-    background: var(--cinza-escuro) url('../../../assets/svg/busca.svg') no-repeat center;
+    background: var(--back) url('../../../assets/svg/busca.svg') no-repeat center;
   }
 
   &__notificacao {
-    background: var(--cinza-escuro) url('../../../assets/svg/notificacao.svg') no-repeat center;
+    background: var(--back) url('../../../assets/svg/notificacao.svg') no-repeat center;
     margin-left: var(--size10);
   }
 
   &__perfil {
-    background: var(--cinza-escuro) url('../../../assets/svg/usuario.svg') no-repeat center;
+    background: var(--back) url('../../../assets/svg/usuario.svg') no-repeat center;
     margin-left: var(--size10);
   }
 
   &__notificacao--alerta {
-    background-color: #fff;
+    background-color: var(--base);
   }
 }
