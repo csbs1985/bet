@@ -1,3 +1,5 @@
+@import '../../../theme/variables.scss';
+
 .menu {
   height: var(--size48);
   width: 100%;
@@ -5,22 +7,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 var(--large);
-  position: absolute;
-  bottom: 0;
 
   &__item {
+    @include circulo(var(--size48));
     flex: 0 1 auto;
-    height: var(--size48);
-    width: var(--size48);
-    border-radius: var(--circulo);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    background-color: var(--principal);
+    margin-bottom: var(--size10);
+
+    span {
+      display: none;
+    }
   }
 
   &__item--ativo {
-    background-color: var(--base);
+    background-color: var(--fundo);
+  }
+
+  &__item--alerta {
+    span {
+      @include circulo(var(--size10));
+      display: block;
+      position: absolute;
+      background-color: var(--vermelho);
+      top: var(--size10);
+      right: var(--size10);
+    }
   }
 }

@@ -8,44 +8,15 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
   @Input() pagina;
+  @Input() notificacao;
 
-  menu = [
-    {
-      rota: '/inicio',
-      icone: '../../../assets/svg/inicio.svg',
-      ativo: false
-    },
-    {
-      rota: '/calendario',
-      icone: '../../../assets/svg/calendario.svg',
-      ativo: false
-    },
-    {
-      rota: '/jogo',
-      icone: '../../../assets/svg/jogo.svg',
-      ativo: false
-    },
-    {
-      rota: '/grupo',
-      icone: '../../../assets/svg/grupo.svg',
-      ativo: false
-    },
-    {
-      rota: '/classificacao',
-      icone: '../../../assets/svg/classificacao.svg',
-      ativo: false
-    }
-  ];
+  habilitaNotificacao = false;
+  notificacaoLength: number;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.menu.forEach(item => {
-      item.ativo = false;
-      if (item.rota === this.pagina) {
-        item.ativo = true;
-      }
-    });
+    this.habilitaNotificacao = this.notificacao || false;
   }
 
   selecionarItemMenu(rota): void {

@@ -10,20 +10,16 @@ export class CabecalhoComponent implements OnInit {
   @Input() titulo;
   @Input() voltar;
   @Input() busca;
-  @Input() notificacao;
 
-  habilitarVoltar = true;
-  habilitarBusca = true;
-  habilitaNotificacao = true;
+  habilitarVoltar = false;
+  habilitarBusca = false;
   cabecalhoTitulo: string;
-  NotificacaoLength = 0;
 
   constructor(private _location: Location) { }
 
   ngOnInit() {
     this.habilitarVoltar = this.voltar || false;
     this.habilitarBusca = this.busca || false;
-    this.habilitaNotificacao = this.notificacao || false;
   }
 
   backClicked() {

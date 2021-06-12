@@ -1,0 +1,7 @@
+@mixin circulo ($size) {
+  @include centro;
+  width: $size;
+  height: $size;
+  background-color: var(--elemento);
+  border-radius: var(--circulo);
+}
