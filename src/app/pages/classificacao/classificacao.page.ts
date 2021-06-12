@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TipoClassificacao } from 'src/app/models/tipo-classificacao';
 
 @Component({
   selector: 'app-classificacao',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./classificacao.page.scss'],
 })
 export class ClassificacaoPage implements OnInit {
+  tabs = [
+    {
+      nome: TipoClassificacao.GERAL,
+      ativo: true,
+    },
+    {
+      nome: TipoClassificacao.MENSAL,
+      ativo: false,
+    },
+    {
+      nome: TipoClassificacao.DIARIO,
+      ativo: false,
+    }
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  tabsResposta(tab): void {
+    console.log(tab);
+  }
 }

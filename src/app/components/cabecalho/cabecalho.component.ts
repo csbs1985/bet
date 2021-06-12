@@ -23,6 +23,7 @@ export class CabecalhoComponent implements OnInit {
   }
 
   backClicked() {
+    /* eslint no-underscore-dangle: 0 */
     this._location.back();
   }
 }

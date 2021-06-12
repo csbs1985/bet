@@ -1,0 +1,4 @@
+<ul class="tabs">
+  <li *ngFor="let item of tabs" class="tabs__item" (click)="selecionarTab(item.nome)"
+    [class.tabs__item--ativo]="item.ativo">{{ item.nome }}</li>
+</ul>

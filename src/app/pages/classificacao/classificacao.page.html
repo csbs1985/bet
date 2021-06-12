@@ -1,9 +1,7 @@
 <section class="classificacao">
-  <app-cabecalho
-    [titulo]="'Classificação'"
-    [busca]="true"
-    [voltar]="true"
-  ></app-cabecalho>
+  <app-cabecalho [titulo]="'Classificação'" [busca]="true"></app-cabecalho>
 
   <app-menu [pagina]="'/classificacao'"></app-menu>
+
+  <app-tabs [tabs]="tabs" (tabsResposta)="tabsResposta($event)"></app-tabs>
 </section>

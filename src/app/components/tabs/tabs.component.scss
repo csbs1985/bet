@@ -1,0 +1,23 @@
+@import '../../../theme/variables.scss';
+
+.tabs {
+  width: 100%;
+  padding: var(--size20);
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    @include centro;
+    @include tabs;
+    flex: 1;
+    margin-right: var(--size20);
+    height: 40px;
+    background-color: var(--elemento);
+    border-radius: var(--canto);
+  }
+
+  &__item--ativo {
+    background-color: var(--destaque);
+  }
+}

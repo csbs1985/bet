@@ -4,3 +4,10 @@
   font-family: 'museo-900';
   line-height: var(--size24);
 }
+
+@mixin tabs {
+  color: var(--principal);
+  font-family: 'museo-500';
+  line-height: var(--size20);
+  text-transform: capitalize;
+}
