@@ -1,5 +1,6 @@
 @mixin page {
   height: 100%;
   background-color: var(--fundo);
-  overflow: hidden;
+  padding: 0 var(--size20);
+  overflow-y: auto;
 }

@@ -22,6 +22,8 @@ export class ClassificacaoPage implements OnInit {
     }
   ];
 
+  habilitarOops = false;
+
   constructor() { }
 
   ngOnInit() { }

@@ -2,8 +2,7 @@
 
 .tabs {
   width: 100%;
-  padding: var(--size20);
-  padding-right: 0;
+  padding: var(--size20) 0;
   display: flex;
   justify-content: space-between;
 
@@ -12,12 +11,16 @@
     @include tabs;
     flex: 1;
     margin-right: var(--size20);
-    height: 40px;
+    height: var(--size30);
     background-color: var(--elemento);
     border-radius: var(--canto);
   }
 
   &__item--ativo {
     background-color: var(--destaque);
+  }
+
+  &__item:last-of-type {
+    margin: 0;
   }
 }

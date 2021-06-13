@@ -5,10 +5,8 @@
   height: var(--size60);
   display: flex;
   align-items: center;
-  padding: 0 var(--large);
 
   &__titulo {
-    @include titulo;
     flex: 1;
   }
 
