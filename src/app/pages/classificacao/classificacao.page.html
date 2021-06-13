@@ -3,11 +3,13 @@
 
   <app-menu [pagina]="'/classificacao'"></app-menu>
 
-  <app-tabs [tabs]="tabs" (tabsResposta)="tabsResposta($event)"></app-tabs>
-
   <app-oops *ngIf="habilitarOops" [texto]="'Nenhuma aposta no periodo.'"></app-oops>
 
-  <div class="classificacao__conteudo"  *ngIf="!habilitarOops" >
-    <app-item-classificacao></app-item-classificacao>
+  <div class="classificacao__conteudo" *ngIf="!habilitarOops">
+    <app-item-classificacao [classificacao]="perfil" [perfil]="true" (itemClassificacaoResposta)="itemClassificacaoResposta($event)"></app-item-classificacao>
+
+    <div *ngFor="let item of classificacao">
+      <app-item-classificacao [classificacao]="item" (itemClassificacaoResposta)="itemClassificacaoResposta($event)"></app-item-classificacao>
+    </div>
   </div>
 </section>

@@ -7,6 +7,7 @@ import { BuscaComponent } from './busca/busca.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { OopsComponent } from './oops/oops.component';
 import { ItemClassificacaoComponent } from './item-classificacao/item-classificacao.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemClassificacaoComponent } from './item-classificacao/item-classifica
     BuscaComponent,
     TabsComponent,
     OopsComponent,
-    ItemClassificacaoComponent
+    ItemClassificacaoComponent,
+    PerfilComponent
   ],
   exports: [
     CabecalhoComponent,
@@ -23,7 +25,8 @@ import { ItemClassificacaoComponent } from './item-classificacao/item-classifica
     BuscaComponent,
     TabsComponent,
     OopsComponent,
-    ItemClassificacaoComponent
+    ItemClassificacaoComponent,
+    PerfilComponent
   ],
   imports: [
     CommonModule,

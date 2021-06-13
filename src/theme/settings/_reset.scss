@@ -81,7 +81,7 @@ audio,
 video {
   font-family: museo-100, Roboto, Arial;
   color: var(--preto);
-  font-size: var(--size16);
+  font-size: var(--size16) !important;
   margin: 0;
   padding: 0;
   position: relative;

@@ -1,0 +1,10 @@
+@import '../../../theme/variables.scss';
+
+.perfil {
+  @include circulo(36px);
+  box-sizing: border-box;
+
+  &__foto {
+    @include circulo(32px);
+  }
+}

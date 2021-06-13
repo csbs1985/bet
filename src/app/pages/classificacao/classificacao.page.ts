@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TipoClassificacao } from 'src/app/models/tipo-classificacao';
 
 @Component({
   selector: 'app-classificacao',
@@ -7,18 +6,109 @@ import { TipoClassificacao } from 'src/app/models/tipo-classificacao';
   styleUrls: ['./classificacao.page.scss'],
 })
 export class ClassificacaoPage implements OnInit {
-  tabs = [
+  perfil = {
+    nome: 'Neymar Jr.',
+    foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+    ponto: 1111,
+    posicao: 1
+  };
+
+  classificacao = [
     {
-      nome: TipoClassificacao.GERAL,
-      ativo: true,
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1,
+      codigo: 12345678,
     },
     {
-      nome: TipoClassificacao.MENSAL,
-      ativo: false,
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
     },
     {
-      nome: TipoClassificacao.DIARIO,
-      ativo: false,
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 12345,
+      posicao: 12345
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    }, {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
+    },
+    {
+      nome: 'Neymar Jr.',
+      foto: 'https://imagens.brasil.elpais.com/resizer/G5CS8CMSXkzChVrUMj7An6Eq-oU=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg',
+      ponto: 1111,
+      posicao: 1
     }
   ];
 
@@ -30,5 +120,9 @@ export class ClassificacaoPage implements OnInit {
 
   tabsResposta(tab): void {
     console.log(tab);
+  }
+
+  itemClassificacaoResposta(conta): void{
+    console.log(conta);
   }
 }

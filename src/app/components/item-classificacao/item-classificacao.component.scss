@@ -1,0 +1,38 @@
+@import '../../../theme/variables.scss';
+
+.item-classificacao {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--size10);
+  border-radius: var(--canto);
+  margin-bottom: var(--size10);
+  background-color: var(--elemento);
+
+  &__posicao,
+  &__foto,
+  &__nome,
+  &__ponto {
+    flex: 0 1 auto;
+    align-self: center;
+    margin-right: var(--size10);
+  }
+
+  &__nome {
+    text-transform: capitalize;
+    flex: 1;
+  }
+
+  &__ponto {
+    text-transform: lowercase;
+  }
+
+  &__ponto,
+  &__posicao {
+    text-align: center;
+    width: var(--size50);
+  }
+
+  &--perfil {
+    background-color: var(--destaque);
+  }
+}
