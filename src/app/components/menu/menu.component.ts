@@ -10,6 +10,34 @@ export class MenuComponent implements OnInit {
   @Input() pagina;
   @Input() notificacao;
 
+  menu = [
+    {
+      pagina: 'inicio',
+      svg: '../../../assets/svg/inicio.svg',
+      ativo: false
+    },
+    {
+      pagina: 'calendario',
+      svg: '../../../assets/svg/calendario.svg',
+      ativo: false
+    },
+    {
+      pagina: 'grupo',
+      svg: '../../../assets/svg/grupo.svg',
+      ativo: false
+    },
+    {
+      pagina: 'classificacao',
+      svg: '../../../assets/svg/classificacao.svg',
+      ativo: false
+    },
+    {
+      pagina: 'notificacao',
+      svg: '../../../assets/svg/notificacao.svg',
+      ativo: false
+    }
+  ];
+
   habilitaNotificacao = false;
   notificacaoLength: number;
 
@@ -17,9 +45,16 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.habilitaNotificacao = this.notificacao || false;
+
+    this.menu.forEach(item => {
+      item.ativo = false;
+      if (item.pagina === this.pagina) {
+        item.ativo = true;
+      }
+    });
   }
 
   selecionarItemMenu(rota): void {
-    this.router.navigate([rota]);
+    this.router.navigate(['/' + rota]);
   }
 }

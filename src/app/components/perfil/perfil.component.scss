@@ -1,10 +1,9 @@
 @import '../../../theme/variables.scss';
 
 .perfil {
-  @include circulo(36px);
-  box-sizing: border-box;
+  @include circulo(var(--size36), var(--destaque));
 
   &__foto {
-    @include circulo(32px);
+    @include circulo(32px, var(--principal));
   }
 }

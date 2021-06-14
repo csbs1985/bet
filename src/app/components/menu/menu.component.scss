@@ -1,16 +1,19 @@
 @import '../../../theme/variables.scss';
 
 .menu {
-  height: var(--size48);
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: var(--base);
+  background-color: var(--fundo);
 
   &__item {
-    @include circulo(var(--size48));
+    @include circulo(var(--size48), var(--fundo));
     flex: 0 1 auto;
-    margin-bottom: var(--size10);
 
     span {
       display: none;
@@ -18,12 +21,12 @@
   }
 
   &__item--ativo {
-    background-color: var(--fundo);
+    @include circulo(var(--size48), var(--destaque));
   }
 
   &__item--alerta {
     span {
-      @include circulo(var(--size10));
+      @include circulo(var(--size10), red);
       display: block;
       position: absolute;
       background-color: var(--vermelho);

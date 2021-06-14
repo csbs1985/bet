@@ -14,7 +14,7 @@
   &__busca,
   &__notificacao,
   &__perfil {
-    @include circulo(var(--size36));
+    @include circulo(var(--size36), var(--elemento));
   }
 
   &__voltar {

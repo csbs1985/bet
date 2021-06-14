@@ -1,8 +1,6 @@
 <section class="classificacao">
   <app-cabecalho [titulo]="'Classificação'" [busca]="true"></app-cabecalho>
 
-  <app-menu [pagina]="'/classificacao'"></app-menu>
-
   <app-oops *ngIf="habilitarOops" [texto]="'Nenhuma aposta no periodo.'"></app-oops>
 
   <div class="classificacao__conteudo" *ngIf="!habilitarOops">
@@ -13,3 +11,5 @@
     </div>
   </div>
 </section>
+
+<app-menu [pagina]="'classificacao'"></app-menu>
