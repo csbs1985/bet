@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NotificacaoService } from 'src/app/services/notificacao.service';
 
 @Component({
   selector: 'app-menu',
@@ -13,39 +14,34 @@ export class MenuComponent implements OnInit {
   menu = [
     {
       pagina: 'inicio',
-      svg: '../../../assets/svg/inicio.svg',
       ativo: false
     },
     {
       pagina: 'calendario',
-      svg: '../../../assets/svg/calendario.svg',
       ativo: false
     },
     {
       pagina: 'grupo',
-      svg: '../../../assets/svg/grupo.svg',
       ativo: false
     },
     {
       pagina: 'classificacao',
-      svg: '../../../assets/svg/classificacao.svg',
       ativo: false
     },
     {
       pagina: 'notificacao',
-      svg: '../../../assets/svg/notificacao.svg',
       ativo: false
     }
   ];
 
-  habilitaNotificacao = false;
-  notificacaoLength: number;
+  notificacaoLength = this.notificacaoService.notificacaoLength;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private notificacaoService: NotificacaoService
+  ) { }
 
   ngOnInit() {
-    this.habilitaNotificacao = this.notificacao || false;
-
     this.menu.forEach(item => {
       item.ativo = false;
       if (item.pagina === this.pagina) {

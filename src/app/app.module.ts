@@ -7,6 +7,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { ClassificacaoPageModule } from './pages/classificacao/classificacao.module';
+import { NotificacaoPageModule } from './pages/notificacao/notificacao.module';
 
 @NgModule({
   declarations: [AppPage],
@@ -17,7 +18,8 @@ import { ClassificacaoPageModule } from './pages/classificacao/classificacao.mod
     AppRoutingModule,
     ComponentsModule,
     PagesModule,
-    ClassificacaoPageModule
+    ClassificacaoPageModule,
+    NotificacaoPageModule
   ],
   providers: [{
     provide: RouteReuseStrategy,

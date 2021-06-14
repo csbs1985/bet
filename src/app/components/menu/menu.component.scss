@@ -3,7 +3,7 @@
 .menu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   position: absolute;
   left: 0;
@@ -15,23 +15,25 @@
     @include circulo(var(--size48), var(--fundo));
     flex: 0 1 auto;
 
-    span {
-      display: none;
+    svg>path,
+    g {
+      fill: var(--destaque);
     }
   }
 
   &__item--ativo {
-    @include circulo(var(--size48), var(--destaque));
+
+    svg>path,
+    g {
+      fill: var(--principal);
+    }
   }
 
   &__item--alerta {
-    span {
-      @include circulo(var(--size10), red);
-      display: block;
-      position: absolute;
-      background-color: var(--vermelho);
-      top: var(--size10);
-      right: var(--size10);
+
+    svg>path,
+    g {
+      fill: var(--vermelho);
     }
   }
 }
