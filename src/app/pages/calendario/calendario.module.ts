@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ComponentsModule } from 'src/app/components/components.module';
 import { CalendarioPage } from './calendario.page';
 
 @NgModule({
@@ -7,7 +8,8 @@ import { CalendarioPage } from './calendario.page';
     CalendarioPage
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ],
   exports: [
     CalendarioPage

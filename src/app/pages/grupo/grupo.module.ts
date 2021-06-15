@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ComponentsModule } from 'src/app/components/components.module';
 import { GrupoPage } from './grupo.page';
 
 @NgModule({
@@ -7,7 +8,8 @@ import { GrupoPage } from './grupo.page';
     GrupoPage
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ],
   exports: [
     GrupoPage
