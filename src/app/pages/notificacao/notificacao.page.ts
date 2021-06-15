@@ -15,5 +15,4 @@ export class NotificacaoPage implements OnInit {
   ngOnInit() {
     this.notificacaoService.setNotificacao(false);
   }
-
 }

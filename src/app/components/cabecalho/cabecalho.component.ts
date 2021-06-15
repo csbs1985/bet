@@ -15,7 +15,7 @@ export class CabecalhoComponent implements OnInit {
   habilitarBusca = false;
   cabecalhoTitulo: string;
 
-  constructor(private _location: Location) { }
+  constructor(private location: Location) { }
 
   ngOnInit() {
     this.habilitarVoltar = this.voltar || false;
@@ -24,6 +24,6 @@ export class CabecalhoComponent implements OnInit {
 
   backClicked() {
     /* eslint no-underscore-dangle: 0 */
-    this._location.back();
+    this.location.back();
   }
 }
