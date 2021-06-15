@@ -1,13 +1,11 @@
-import { AppPage } from './app.page';
-import { ComponentsModule } from './components/components.module';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
+import { AppPage } from './app.page';
+import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
-import { ClassificacaoPageModule } from './pages/classificacao/classificacao.module';
-import { NotificacaoPageModule } from './pages/notificacao/notificacao.module';
 
 @NgModule({
   declarations: [AppPage],
@@ -17,15 +15,13 @@ import { NotificacaoPageModule } from './pages/notificacao/notificacao.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     ComponentsModule,
-    PagesModule,
-    ClassificacaoPageModule,
-    NotificacaoPageModule
+    PagesModule
   ],
   providers: [{
     provide: RouteReuseStrategy,
     useClass: IonicRouteStrategy
   }],
   bootstrap: [AppPage],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
