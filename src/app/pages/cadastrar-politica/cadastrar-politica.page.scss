@@ -1,6 +1,6 @@
 @import '../../../theme/variables.scss';
 
-.conta {
+.cadastro-politica {
   @include page;
 
   &__conteudo {
@@ -8,11 +8,9 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: var(--size20);
-    height: calc(100% - 80px);
   }
 
-  &__botoes {
-    margin: var(--size20) 0 0;
-    margin-top: auto;
+  &__texto {
+    margin-bottom: var(--size40);
   }
 }

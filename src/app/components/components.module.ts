@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BotaoPrincipalComponent } from './botao-principal/botao-principal.component';
+import { BotaoSecundarioComponent } from './botao-secundario/botao-secundario.component';
 import { BuscaComponent } from './busca/busca.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { ItemClassificacaoComponent } from './item-classificacao/item-classificacao.component';
@@ -17,7 +19,9 @@ import { TabsComponent } from './tabs/tabs.component';
     TabsComponent,
     OopsComponent,
     ItemClassificacaoComponent,
-    PerfilComponent
+    PerfilComponent,
+    BotaoPrincipalComponent,
+    BotaoSecundarioComponent
   ],
   exports: [
     CabecalhoComponent,
@@ -26,7 +30,9 @@ import { TabsComponent } from './tabs/tabs.component';
     TabsComponent,
     OopsComponent,
     ItemClassificacaoComponent,
-    PerfilComponent
+    PerfilComponent,
+    BotaoPrincipalComponent,
+    BotaoSecundarioComponent
   ],
   imports: [
     CommonModule,

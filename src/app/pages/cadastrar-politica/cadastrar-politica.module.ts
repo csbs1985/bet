@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { ContaPage } from './conta.page';
+import { CadastrarPoliticaPage } from './cadastrar-politica.page';
 
 @NgModule({
   imports: [
@@ -12,7 +12,7 @@ import { ContaPage } from './conta.page';
     IonicModule,
     ComponentsModule
   ],
-  declarations: [ContaPage],
-  exports: [ContaPage]
+  declarations: [CadastrarPoliticaPage],
+  exports: [CadastrarPoliticaPage]
 })
-export class ContaPageModule { }
+export class CadastrarPoliticaPageModule { }

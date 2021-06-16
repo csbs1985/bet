@@ -1,17 +1,17 @@
-<section class="conta">
+<section class="entrar">
   <app-cabecalho
-    [titulo]="'Conta'"
+    [titulo]="'Cadastrar'"
     [voltar]="true"
   ></app-cabecalho>
 
-  <div class="conta__conteudo">
-    <div class="conta__texto">
+  <div class="entrar__conteudo">
+    <div class="entrar__texto">
       <h2>Um novo jeito de apostar</h2>
 
       <br>
 
-      <h3>Um novo jeito de apostar em eventos esportivos. Aqui você precisa dominar todos aqueles números que só um
-        matemático ou estudioso em futebol pode entender.</h3>
+      <h4>Um novo jeito de apostar em eventos esportivos. Aqui você precisa dominar todos aqueles números que só um
+        matemático ou estudioso em futebol pode entender.</h4>
 
       <br>
 
@@ -29,18 +29,18 @@
 
       <br><br>
 
-      <h3>Já é cadastrado? Entre agora, aposte, ganhe e confira o sua classificação entre os melhores.</h3>
+      <h4>Já é cadastrado? Entre agora, aposte, ganhe e confira o sua classificação entre os melhores.</h4>
     </div>
 
-    <div class="conta__botoes botao__varios">
+    <div class="entrar__botoes botao__varios">
       <app-botao-secundario
         [texto]="'Entrar'"
-        (click)="selecionarEntrar()"
+        (click)="selecionarBotao('entrar')"
       ></app-botao-secundario>
 
       <app-botao-principal
         [texto]="'cadastrar'"
-        (click)="selecionarCadastro()"
+        (click)="selecionarBotao('cadastrar')"
       ></app-botao-principal>
     </div>
   </div>

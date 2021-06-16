@@ -9,7 +9,9 @@ export class ContaPage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
+  selecionarEntrar(): void { }
+
+  selecionarCadastro(): void { }
 }

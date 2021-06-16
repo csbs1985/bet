@@ -1,0 +1,12 @@
+.botao-principal {
+  padding: 0 var(--size20);
+  background-color: var(--elemento);
+
+  h2 {
+    margin-right: var(--size10);
+  }
+
+  svg {
+    transform: rotate(180deg);
+  }
+}

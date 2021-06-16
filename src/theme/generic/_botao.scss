@@ -1,0 +1,25 @@
+.botao {
+  height: var(--size48);
+  border-radius: var(--canto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--fundo);
+
+  h2 {
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  svg {
+    path,
+    g {
+      fill: var(--principal);
+    }
+  }
+
+  &__varios {
+    display: flex;
+    justify-content: space-between;
+  }
+}
